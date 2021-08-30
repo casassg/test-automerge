@@ -49,6 +49,6 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip wheel
-        pip install -e tfx${{ matrix.tfx-version }}
+        pip install tfx${{ matrix.tfx-version }}
     - name: Run tests
       run: pytest .
