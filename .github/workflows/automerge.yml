@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run Codeowners merge check
-        uses: casassg/code-owner-self-merge@v0.1-alpha1
+        uses: casassg/code-owner-self-merge@v0.1-alpha2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
