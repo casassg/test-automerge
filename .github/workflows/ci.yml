@@ -51,4 +51,4 @@ jobs:
         python -m pip install --upgrade pip wheel
         pip install tfx${{ matrix.tfx-version }}
     - name: Run tests
-      run: pytest .
+      run: pytestasdasda .
