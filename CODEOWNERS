@@ -1,9 +1,11 @@
 # Core team for reviews of project proposals and main distribution files
-/proposals/ @casassg
+/proposals/ @casassg [proposals]
 
-/project1/ @cent5
-/project2/ @codesue
+/project1/ @cent5 [project1]
+/project2/ @codesue [project2]
 
 # CI configuration (for now owned by @casassg)
 /.github/workflows/ @casassg
+
+* @casassg
 
