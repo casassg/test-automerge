@@ -1,3 +1,5 @@
+* @casassg
+
 # Core team for reviews of project proposals and main distribution files
 /proposals/ @casassg [proposals]
 
@@ -6,5 +8,3 @@
 
 # CI configuration (for now owned by @casassg)
 /.github/workflows/ @casassg [CI]
-
-
