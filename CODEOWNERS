@@ -5,7 +5,7 @@
 /project2/ @codesue [project2]
 
 # CI configuration (for now owned by @casassg)
-/.github/workflows/ @casassg
+/.github/workflows/ @casassg [CI]
 
 * @casassg
 

@@ -1,8 +1,10 @@
 name: Automatic merging
 on:
+  status:
   pull_request_target: { types: [opened, synchronize] }
   issue_comment: { types: [created] }
   pull_request_review: { types: [submitted] }
+
 
 jobs:
   build:
@@ -11,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run Codeowners merge check
-        uses: casassg/code-owner-self-merge@v0.1-alpha10
+        uses: casassg/code-owner-self-merge@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          merge_method: 'squash'
