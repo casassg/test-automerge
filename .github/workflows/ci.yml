@@ -25,7 +25,6 @@ jobs:
       with:
         # This path is specific to Ubuntu
         path: ~/.cache/pip
-        # Look to see if there is a cache hit for the corresponding setup.py + TFX version 
         key: ${{ runner.os }}-pip-${{ hashFiles('setup.py') }}-${{ matrix.tfx-version }}
         restore-keys: |
           ${{ runner.os }}-pip--${{ hashFiles('setup.py') }}
