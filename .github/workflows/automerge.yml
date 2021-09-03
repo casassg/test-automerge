@@ -18,4 +18,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          merge_method: 'merge'
+          merge_method: 'squash'
+          assign_reviewer: 'false'
