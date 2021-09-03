@@ -33,5 +33,5 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip wheel
-        pip install pytest twine
+        pip install pytest
 
