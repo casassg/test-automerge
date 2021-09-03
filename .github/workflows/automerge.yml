@@ -12,6 +12,7 @@ jobs:
       - uses: actions/labeler@v3
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          sync-labels: "true"
       - uses: actions/checkout@v1
       - name: Run Codeowners merge check
         uses: casassg/auto-merge-bot@master
