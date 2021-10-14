@@ -1,0 +1,10 @@
+# Add 'label1' to any changes within 'example' folder or any subfolders
+proposals:
+- proposals/**/*
+
+# Add 'label2' to any file changes within 'example2' folder
+project1: project1/**/*
+project2: project2/**/*
+project3: project3/**/*
+
+readme: README.md
