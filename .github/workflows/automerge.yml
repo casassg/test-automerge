@@ -15,6 +15,8 @@ jobs:
       - uses: "pascalgn/automerge-action@v0.14.3"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_LABELS: 'merge-ready'
+          MERGE_METHOD: 'squash'
 
       - name: Run Codeowners merge check
         uses: casassg/auto-merge-bot@master
