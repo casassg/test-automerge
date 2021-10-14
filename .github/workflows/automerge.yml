@@ -12,12 +12,7 @@ jobs:
         with:
           repo-token: "${{ secrets.GITHUB_TOKEN }}"
           sync-labels: "true"
-      - uses: "pascalgn/automerge-action@v0.14.3"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: 'merge-ready'
-          MERGE_METHOD: 'squash'
-
+      
       - name: Run Codeowners merge check
         uses: casassg/auto-merge-bot@master
         env:
@@ -26,3 +21,9 @@ jobs:
           merge_method: 'squash'
           assign_reviewer: 'true'
       
+      - uses: "pascalgn/automerge-action@v0.14.3"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_LABELS: 'merge-ready'
+          MERGE_METHOD: 'squash'
+
