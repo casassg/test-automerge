@@ -20,5 +20,3 @@ jobs:
         with:
           merge_method: 'squash'
           assign_reviewer: 'true'
-      
-
