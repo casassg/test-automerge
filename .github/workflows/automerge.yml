@@ -4,7 +4,7 @@ on:
   issue_comment: { types: [created] }
 
 jobs:
-  build:
+  merge:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,9 +21,4 @@ jobs:
           merge_method: 'squash'
           assign_reviewer: 'true'
       
-      - uses: "pascalgn/automerge-action@v0.14.3"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: 'merge-ready'
-          MERGE_METHOD: 'squash'
 
