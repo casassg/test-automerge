@@ -3,9 +3,6 @@
 # Core team for reviews of project proposals and main distribution files
 /proposals/ @casassg @casassg2
 
-/project1/ @cent5 
-/project2/ @codesue 
-
 # CI configuration (for now owned by @casassg)
 /.github/workflows/ @casassg
 
