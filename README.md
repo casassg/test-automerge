@@ -1,5 +1,6 @@
 # test-automerge
-Small repository to test automerge based on CODEOWNERS
+
+Small repository to test automerge-bot based on CODEOWNERS
 
 Please ignore this repository.
 
